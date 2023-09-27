@@ -1,17 +1,23 @@
 .main-members{
-        grid-column: 2;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        background-color: $deepJungleGreen;
-        position: relative;
-        .members-title{
-             font-size: rem(48px);   
-             text-align: center;
-             margin-bottom: 80px;
-             span{
-                color: $raptureBlue;
-             }
+        display: grid;
+        grid-template-columns: 165px 1fr 165px;
+        grid-column: 1/-1;
+        .main-info{
+                grid-column: 2/3;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                position: relative;
+
+                .members-title{
+                font-size: rem(48px);
+                text-align: center;
+                margin-bottom: 80px;
+
+                span{
+                        color: $raptureBlue;
+                }
         }
 
         .cards{
@@ -42,7 +48,6 @@
                         position: absolute;
                         opacity: 0.5;
                         z-index: 10;
-
                 }
 
                 .img-member{
@@ -52,10 +57,11 @@
                 }
         }
 
+        }
         .img-lines{
                 position: absolute;
         }
-        
+
         .img-square{
                 position: absolute;
                 right: 0;

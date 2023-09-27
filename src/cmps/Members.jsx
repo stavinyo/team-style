@@ -7,6 +7,7 @@ export function Members() {
         <main className="main-members">
             <img className='img-lines' src={utilService.getAssetSrc('lines')} alt="" />
             <img className='img-square' src={utilService.getAssetSrc('square')} alt="" />
+
             <section className="main-info">
 
                 <h1 className="members-title">Delivering real results for top <br /> companies. Some of our <span>success stories.</span></h1>
