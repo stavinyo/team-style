@@ -1,0 +1,30 @@
+.header-container{
+    grid-column: 2;
+    height: 194px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .header-navigate{
+
+        display: flex;
+        align-items: center;
+        
+        .logo{
+            margin-inline-end: 40px;
+            font-size: rem(40px);
+            margin-top: -8px;
+        }
+        
+        a:not(:first-child){
+            margin-inline-start: 40px;
+        }
+
+    }
+    .btn-contact{
+        border: 2px solid $white;
+        border-radius: 50px;
+        padding: 10px 32px;
+    }
+}
